@@ -59,5 +59,6 @@ setup(
     ],
     zip_safe=False,
     include_package_data=True,
-    install_requires=get_install_requires()
+    install_requires=get_install_requires(),
+    long_description_content_type='text/x-rst'
 )
