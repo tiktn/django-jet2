@@ -36,6 +36,9 @@ class RelatedFieldAjaxListFilter(RelatedFieldListFilter):
             'data-queryset--lookup': self.lookup_kwarg
         }))
 
+        self.lookup_val = request.GET.get(self.lookup_kwarg, None)
+        self.lookup_val_isnull = request.GET.get(self.lookup_kwarg_isnull, None)
+
         if self.lookup_val is None:
             return []
 
