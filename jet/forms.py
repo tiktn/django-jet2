@@ -4,17 +4,12 @@ from django.contrib.auth.models import Permission
 from django.contrib.contenttypes.models import ContentType
 from django.core.exceptions import ValidationError
 from django.db.models import Q
+from django.apps import apps
 import operator
 
 from jet.models import Bookmark, PinnedApplication
 from jet.utils import get_model_instance_label, user_is_authenticated
 from functools import reduce
-
-try:
-    from django.apps import apps
-    get_model = apps.get_model
-except ImportError:
-    from django.db.models.loading import get_model
 
 
 class AddBookmarkForm(forms.ModelForm):
@@ -113,7 +108,7 @@ class ModelLookupForm(forms.Form):
             raise ValidationError('error')
 
         try:
-            self.model_cls = get_model(data['app_label'], data['model'])
+            self.model_cls = apps.get_model(data['app_label'], data['model'])
         except:
             raise ValidationError('error')
 

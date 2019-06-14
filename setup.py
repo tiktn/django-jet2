@@ -11,21 +11,6 @@ def read(fname):
     return file.read()
 
 
-def get_install_requires():
-    install_requires = ['Django']
-
-    try:
-        import importlib
-    except ImportError:
-        install_requires.append('importlib')
-
-    try:
-        from collections import OrderedDict
-    except ImportError:
-        install_requires.append('ordereddict')
-
-    return install_requires
-
 setup(
     name='django-jet2',
     version=__import__('jet').VERSION,
@@ -60,7 +45,7 @@ setup(
     ],
     zip_safe=False,
     include_package_data=True,
-    install_requires=get_install_requires(),
+    install_requires=['Django'],
     long_description_content_type='text/x-rst',
     project_urls={
         'Documentation': 'https://jet.readthedocs.io/en/latest/',

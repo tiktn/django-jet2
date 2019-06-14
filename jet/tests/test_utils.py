@@ -28,7 +28,7 @@ class UtilsTestCase(TestCase):
             def has_module_perms(self, app):
                 return True
 
-            def has_perm(self, object):
+            def has_perm(self, obj):
                 return True
 
         class Request:

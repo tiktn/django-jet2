@@ -1,7 +1,4 @@
-try:
-    from django.core.management.base import NoArgsCommand
-except ImportError:
-    from django.core.management import BaseCommand as NoArgsCommand
+from django.core.management.base import NoArgsCommand
 
 from jet.utils import get_app_list
 
@@ -9,12 +6,12 @@ from jet.utils import get_app_list
 class Command(NoArgsCommand):
     help = 'Generates example of JET custom apps setting'
     item_order = 0
-    
+
     def handle(self, *args, **options):
         if args:
             raise CommandError("Command doesn't accept any arguments")
         return self.handle_noargs(**options)
-    
+
     def handle_noargs(self, **options):
         class User:
             is_active = True
@@ -24,7 +21,7 @@ class Command(NoArgsCommand):
             def has_module_perms(self, app):
                 return True
 
-            def has_perm(self, object):
+            def has_perm(self, obj):
                 return True
 
         class Request:

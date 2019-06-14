@@ -17,8 +17,4 @@ def get_dashboard(context, location):
 
 @register.filter
 def format_change_message(log_entry):
-    # Django 1.10+
-    if hasattr(log_entry, 'get_change_message'):
-        return log_entry.get_change_message()
-    else:
-        return log_entry.change_message
+    return log_entry.get_change_message()

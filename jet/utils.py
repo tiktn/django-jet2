@@ -5,19 +5,10 @@ from django.utils import translation
 from jet import settings
 from jet.models import PinnedApplication
 
-try:
-    from django.apps.registry import apps
-except ImportError:
-    try:
-        from django.apps import apps # Fix Django 1.7 import issue
-    except ImportError:
-        pass
+from django.apps import apps
 from django.core.serializers.json import DjangoJSONEncoder
 from django.http import HttpResponse
-try:
-    from django.core.urlresolvers import reverse, resolve, NoReverseMatch
-except ImportError: # Django 1.11
-    from django.urls import reverse, resolve, NoReverseMatch
+from django.urls import reverse, resolve, NoReverseMatch
 
 from django.contrib.admin import AdminSite
 from django.utils.encoding import smart_text
@@ -30,10 +21,7 @@ from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from django.utils.text import slugify
 
-try:
-    from collections import OrderedDict
-except ImportError:
-    from ordereddict import OrderedDict  # Python 2.6
+from collections import OrderedDict
 
 
 class JsonResponse(HttpResponse):

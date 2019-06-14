@@ -2,10 +2,7 @@
 import datetime
 import json
 from django import forms
-try:
-    from django.core.urlresolvers import reverse
-except ImportError: # Django 1.11
-    from django.urls import reverse
+from django.urls import reverse
 
 from django.forms import Widget
 from django.utils import formats
@@ -17,14 +14,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.conf import settings
 from django.utils.encoding import force_text
 
-try:
-    from urllib import request
-    from urllib.parse import urlencode
-    from urllib.error import URLError, HTTPError
-except ImportError:
-    import urllib2 as request
-    from urllib2 import URLError, HTTPError
-    from urllib import urlencode
+from urllib import request
+from urllib.parse import urlencode
+from urllib.error import URLError, HTTPError
 
 JET_MODULE_YANDEX_METRIKA_CLIENT_ID = getattr(settings, 'JET_MODULE_YANDEX_METRIKA_CLIENT_ID', '')
 JET_MODULE_YANDEX_METRIKA_CLIENT_SECRET = getattr(settings, 'JET_MODULE_YANDEX_METRIKA_CLIENT_SECRET', '')

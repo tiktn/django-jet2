@@ -1,11 +1,6 @@
 import django
 from django.conf.urls import url
-
-try:
-    from django.views.i18n import JavaScriptCatalog
-    javascript_catalog = JavaScriptCatalog.as_view()
-except ImportError:  # Django < 2.0
-    from django.views.i18n import javascript_catalog
+from django.views.i18n import JavaScriptCatalog
 
 from jet.dashboard import dashboard
 from jet.dashboard.views import update_dashboard_modules_view, add_user_dashboard_module_view, \
@@ -52,14 +47,10 @@ urlpatterns = [
     ),
     url(
         r'^jsi18n/$',
-        javascript_catalog,
+        JavaScriptCatalog.as_view(),
         {'packages': 'jet'},
         name='jsi18n'
     ),
 ]
 
 urlpatterns += dashboard.urls.get_urls()
-
-if django.VERSION[:2] < (1, 8):
-    from django.conf.urls import patterns
-    urlpatterns = patterns('', *urlpatterns)

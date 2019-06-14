@@ -1,9 +1,6 @@
 from django.conf.urls import url
 from django.contrib import messages
-try:
-    from django.core.urlresolvers import reverse
-except ImportError: # Django 1.11
-    from django.urls import reverse
+from django.urls import reverse
 
 from django.http import HttpResponse
 from django.shortcuts import redirect
