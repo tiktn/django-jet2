@@ -2,28 +2,17 @@
 Django JET
 ==========
 
-.. image:: https://travis-ci.org/geex-arts/django-jet.svg?branch=master
-    :target: https://travis-ci.org/geex-arts/django-jet
+.. image:: https://travis-ci.org/tiktn/django-jet2.svg?branch=master
+    :target: https://travis-ci.org/tiktn/django-jet2
 
-**Modern template for Django admin interface with improved functionality**
-
-+-----------------------------------------------------------------------------------------------------------------------------------+
-| Attention! **NEW JET**                                                                                                            |
-+===================================================================================================================================+
-| **We are proud to announce completely new Jet. Please check out Live Demo.**                                                      |
-|                                                                                                                                   |
-| Developing of new features for Django Jet will be frozen, only critical bugs will be fixed.                                       |
-+-----------------------------------------------------------------------------------------------------------------------------------+
-| `Live Demo <https://github.com/jet-admin/jet-bridge>`_                                                                            |
-+-----------------------------------------------------------------------------------------------------------------------------------+
-
+**Next Generation django-jet (Modern template for Django admin interface with improved functionality)**
 
 Django JET has two kinds of licenses: open-source (AGPLv3) and commercial. Please note that using AGPLv3
 code in your programs make them AGPL compatible too. So if you don't want to comply with that we can provide you a commercial
 license (visit Home page). The commercial license is designed for using Django JET in commercial products
 and applications without the provisions of the AGPLv3.
 
-.. image:: https://raw.githubusercontent.com/geex-arts/jet/static/logo.png
+.. image:: static/logo.png
     :width: 500px
     :height: 500px
     :scale: 50%
@@ -31,12 +20,10 @@ and applications without the provisions of the AGPLv3.
     :align: center
     
 * Home page: http://jet.geex-arts.com/
-* **New Jet**: `Live Demo <https://app.jetadmin.io/demo?utm_source=jet&utm_medium=banner&utm_campaign=github&utm_content=link&utm_term=promo>`_
 * Live Demo: http://demo.jet.geex-arts.com/admin/
 * Documentation: http://jet.readthedocs.org/
 * libi.io http://libi.io/library/1683/django-jet
 * PyPI: https://pypi.python.org/pypi/django-jet
-* Support: support@jet.geex-arts.com
 
 Why Django JET?
 ===============
@@ -53,20 +40,20 @@ Why Django JET?
 Screenshots
 ===========
 
-.. image:: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen1_720.png
+.. image:: static/screen1_720.png
     :alt: Screenshot #1
     :align: center
-    :target: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen1.png
+    :target: static/screen1.png
     
-.. image:: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen2_720.png
+.. image:: static/screen2_720.png
     :alt: Screenshot #2
     :align: center
-    :target: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen2.png
+    :target: static/screen2.png
     
-.. image:: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen3_720.png
+.. image:: static/screen3_720.png
     :alt: Screenshot #3
     :align: center
-    :target: https://raw.githubusercontent.com/geex-arts/django-jet/static/screen3.png
+    :target: static/screen3.png
 
 Installation
 ============
@@ -75,9 +62,9 @@ Installation
 
 .. code:: python
 
-    pip install django-jet
+    pip install django-jet2
     # or
-    easy_install django-jet
+    easy_install django-jet2
 
 * Add 'jet' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'django.contrib.admin'):
 

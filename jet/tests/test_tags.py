@@ -4,6 +4,7 @@ try:
 except ImportError: # Django 1.11
     from django.urls import reverse
 
+from django.contrib.auth.models import AnonymousUser
 from django.test import TestCase
 from jet.templatetags.jet_tags import jet_select2_lookups, jet_next_object, jet_previous_object
 from jet.tests.models import TestModel, SearchableTestModel
@@ -70,10 +71,12 @@ class TagsTestCase(TestCase):
             TestModel._meta.model_name
         ), args=(self.models[1].pk,)) + '?' + preserved_filters
 
+        request = RequestFactory().get(expected_url)
+        request.user = AnonymousUser()
         context = {
             'original': instance,
             'preserved_filters': preserved_filters,
-            'request': RequestFactory().get(expected_url),
+            'request': request,
         }
 
         actual_url = jet_next_object(context)['url']
@@ -90,10 +93,12 @@ class TagsTestCase(TestCase):
             TestModel._meta.model_name
         ), args=(self.models[1].pk,)) + '?' + preserved_filters
 
+        request = RequestFactory().get(changelist_url)
+        request.user = AnonymousUser()
         context = {
             'original': instance,
             'preserved_filters': preserved_filters,
-            'request': RequestFactory().get(changelist_url),
+            'request': request,
         }
 
         previous_object = jet_previous_object(context)
