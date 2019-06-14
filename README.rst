@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftiktn%2Fdjango-jet2.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftiktn%2Fdjango-jet2?ref=badge_shield)
+
 ==========
 Django JET
 ==========
@@ -198,3 +200,7 @@ Dashboard installation
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftiktn%2Fdjango-jet2.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftiktn%2Fdjango-jet2?ref=badge_large)
