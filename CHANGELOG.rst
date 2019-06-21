@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.0.9
+-----
+* Fixed tests
+* Fixed Read the Docs build
+* Removed Django <2 support
+* Add Tox builds and tests
+* Fixed Sidebar URL not clickable with only 'view' permission
+* Forked the project into django-jet2 package
+
 1.0.8
 -----
 * PR-345: Django 2.1 compatability fix
