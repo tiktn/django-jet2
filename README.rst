@@ -7,7 +7,7 @@ Django JET2
 
 **Next Generation django-jet2 (Modern template for Django admin interface with improved functionality)**
 
-.. image:: static/logo.png
+.. image:: docs/_static/logo.png
     :width: 500px
     :height: 500px
     :scale: 50%
@@ -36,24 +36,24 @@ Screenshots
 
 Index dashboard
 
-.. image:: static/screen1_720.png
+.. image:: docs/_static/screen1_720.png
     :alt: Screenshot #1
     :align: center
-    :target: static/screen1.png
+    :target: docs/_static/screen1.png
 
 Changelist
 
-.. image:: static/screen2_720.png
+.. image:: docs/_static/screen2_720.png
     :alt: Screenshot #2
     :align: center
-    :target: static/screen2.png
+    :target: docs/_static/screen2.png
 
 Sidemenu
 
-.. image:: static/screen3_720.png
+.. image:: docs/_static/screen3_720.png
     :alt: Screenshot #3
     :align: center
-    :target: static/screen3.png
+    :target: docs/_static/screen3.png
 
 Installation
 ============

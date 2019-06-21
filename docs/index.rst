@@ -7,7 +7,7 @@ About
 
 **Next Generation django-jet2 (Modern template for Django admin interface with improved functionality)**
 
-.. image:: https://raw.githubusercontent.com/tiktn/django-jet2/static/logo.png
+.. image:: _static/logo.png
     :width: 500px
     :height: 500px
     :scale: 50%
@@ -41,24 +41,24 @@ Screenshots
 
 Index dashboard
 
-.. image:: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen1_720.png
+.. image:: _static/screen1_720.png
     :alt: Screenshot #1
     :align: center
-    :target: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen1.png
+    :target: _static/screen1.png
 
 Changelist
 
-.. image:: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen2_720.png
+.. image:: _static/screen2_720.png
     :alt: Screenshot #2
     :align: center
-    :target: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen2.png
+    :target: _static/screen2.png
 
 Sidemenu
 
-.. image:: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen3_720.png
+.. image:: _static/screen3_720.png
     :alt: Screenshot #3
     :align: center
-    :target: https://raw.githubusercontent.com/tiktn/django-jet2/static/screen3.png
+    :target: _static/screen3.png
 
 License
 =======
