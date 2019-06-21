@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='django-jet2',
-    version=__import__('jet').VERSION,
+    version=__import__('jet').__version__,
     description='Next Generation of django-jet (Modern template for Django admin interface with improved functionality)',
     long_description=read('README.rst'),
     author='TIK (Technology Innovation Network)',
