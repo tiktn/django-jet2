@@ -1,5 +1,5 @@
 django
 sphinx
-sphinx_rtd_theme
+sphinx_rtd_theme==0.4.3
 google-api-python-client
 oauth2client
