@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.10
+------
+* Fixed broken VERSION not defined error
+
 1.0.9
 -----
 * Fixed tests
