@@ -48,8 +48,7 @@ setup(
     install_requires=['Django'],
     long_description_content_type='text/x-rst',
     project_urls={
-        'Documentation': 'https://jet.readthedocs.io/en/latest/',
-        'Funding': 'https://donate.pypi.org',
+        'Documentation': 'http://django-jet2.rtfd.io/',
         'Source': 'https://github.com/tiktn/django-jet2',
         'Tracker': 'https://github.com/tiktn/django-jet2/issues',
     },

@@ -24,9 +24,9 @@ Dashboard Installation
 
     urlpatterns = patterns(
         '',
-        url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
-        url(r'^jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
-        url(r'^admin/', include(admin.site.urls)),
+        path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
+        path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
+        path('admin/', include(admin.site.urls)),
         ...
     )
 
@@ -41,8 +41,6 @@ Dashboard Installation
 .. code:: python
 
     python manage.py migrate dashboard
-    # or
-    python manage.py syncdb
 
 * Collect static if you are in production environment:
 

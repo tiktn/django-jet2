@@ -11,9 +11,9 @@ Installation
 
 .. code:: python
 
-    pip install django-jet
+    pip install django-jet2
     # or
-    easy_install django-jet
+    easy_install django-jet2
 
 * Add 'jet' application to the INSTALLED_APPS setting of your Django project settings.py file (note it should be before 'django.contrib.admin'):
 
@@ -26,7 +26,7 @@ Installation
         ...
     )
 
-* Make sure ``django.template.context_processors.request`` context processor is enabled in settings.py (Django 1.8+ way):
+* Make sure ``django.template.context_processors.request`` context processor is enabled in settings.py:
 
 .. code:: python
 
@@ -45,25 +45,14 @@ Installation
         },
     ]
 
-.. warning::
-    Before Django 1.8 you should specify context processors different way. Also use ``django.core.context_processors.request`` instead of ``django.template.context_processors.request``.
-
-    .. code:: python
-
-        from django.conf import global_settings
-
-        TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
-            'django.core.context_processors.request',
-        )
-
 * Add URL-pattern to the urlpatterns of your Django project urls.py file (they are needed for related–lookups and autocompletes):
 
 .. code:: python
 
     urlpatterns = patterns(
         '',
-        url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
-        url(r'^admin/', include(admin.site.urls)),
+        path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
+        path('admin/', include(admin.site.urls)),
         ...
     )
 
@@ -72,13 +61,11 @@ Installation
 .. code:: python
 
     python manage.py migrate jet
-    # or
-    python manage.py syncdb
 
 * Collect static if you are in production environment:
 
 .. code:: python
 
-        python manage.py collectstatic
+    python manage.py collectstatic
 
 * Clear your browser cache

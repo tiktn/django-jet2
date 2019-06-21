@@ -1,7 +1,7 @@
 Contributing
 ============
 
-Django JET is open-source and every member of the community can contribute to it. We are happy to see patches
+Django JET2 is open-source and every member of the community can contribute to it. We are happy to see patches
 and improvements with Django JET. But please keep in mind that there are some guidelines you should follow.
 
 .. _requirements:
@@ -20,7 +20,7 @@ So you've found a bug or have a great idea for a feature. Here's the steps you s
 to help get it added/fixed in Django JET:
 
 * First check if there's an existing issue/pull request for this bug/feature. Issues can be found here
-  https://github.com/geex-arts/django-jet/issues, PRs here https://github.com/geex-arts/django-jet/pulls
+  https://github.com/tiktn/django-jet2/issues, PRs here https://github.com/tiktn/django-jet2/pulls
 * If there isn't one there, please add an issue. The ideal report includes:
 
   * A description of the problem/suggestion
@@ -63,6 +63,18 @@ In order to be merged into Django JET, contributions must have the following:
 
 If your contribution lacks any of these things, they will have to be added by a core contributor before
 being merged into Django JET proper, which may take time to get to.
+
+Contribution Translations
+-------------------------
+
+If you want to add new translations locale, please do not use automatic Django locale generation, because it will
+produce files with missing JS strings and duplicates. Instead copy the following well formatted "en" files to your
+new locale folder:
+
+* jet/locale/LOCALE/LC_MESSAGES/django.mo
+* jet/locale/LOCALE/LC_MESSAGES/djangojs.mo
+* jet/dashboard/locale/LOCALE/LC_MESSAGES/django.mo
+* jet/dashboard/locale/LOCALE/LC_MESSAGES/djangojs.mo
 
 Contribution Styles/Javascript/Translations
 -------------------------------------------
