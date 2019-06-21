@@ -1,4 +1,4 @@
 sphinx
 sphinx_rtd_theme
 google-api-python-client
-oauth2client
+oauth2client==4.1.3
