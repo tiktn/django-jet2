@@ -18,7 +18,7 @@ setup(
     long_description=read('README.rst'),
     author='TIK (Technology Innovation Network)',
     author_email='contat@tik.tn',
-    url='https://github.com/tiktn/django-jet2',
+    url='https://github.com/tikservices/django-jet2',
     packages=find_packages(),
     license='AGPLv3',
     python_requires='>=3',
@@ -49,7 +49,7 @@ setup(
     long_description_content_type='text/x-rst',
     project_urls={
         'Documentation': 'http://django-jet2.rtfd.io/',
-        'Source': 'https://github.com/tiktn/django-jet2',
-        'Tracker': 'https://github.com/tiktn/django-jet2/issues',
+        'Source': 'https://github.com/tikservices/django-jet2',
+        'Tracker': 'https://github.com/tikservices/django-jet2/issues',
     },
 )

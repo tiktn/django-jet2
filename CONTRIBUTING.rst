@@ -20,7 +20,7 @@ So you've found a bug or have a great idea for a feature. Here's the steps you s
 to help get it added/fixed in Django JET:
 
 * First check if there's an existing issue/pull request for this bug/feature. Issues can be found here
-  https://github.com/tiktn/django-jet2/issues, PRs here https://github.com/tiktn/django-jet2/pulls
+  https://github.com/tikservices/django-jet2/issues, PRs here https://github.com/tikservices/django-jet2/pulls
 * If there isn't one there, please add an issue. The ideal report includes:
 
   * A description of the problem/suggestion

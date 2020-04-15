@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.11
+------
+* Add compatibility with Django 3
+
 1.0.10
 ------
 * Fixed broken VERSION not defined error

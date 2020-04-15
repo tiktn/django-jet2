@@ -28,13 +28,13 @@ Contents
 Resources
 =========
 
-* Home page: https://github.com/tiktn/django-jet2
+* Home page: https://github.com/tikservices/django-jet2
 * Documentation: http://django-jet2.rtfd.io/
 * PyPI: https://pypi.python.org/pypi/django-jet2
 * Support: support@tik.tn
 
-.. image:: https://travis-ci.org/tiktn/django-jet2.svg?branch=master
-    :target: https://travis-ci.org/tiktn/django-jet2
+.. image:: https://travis-ci.org/tikservices/django-jet2.svg?branch=master
+    :target: https://travis-ci.org/tikservices/django-jet2
 
 Screenshots
 ===========
