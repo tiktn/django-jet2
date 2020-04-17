@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.12
+------
+* Fix compatibility with Django 3
+
 1.0.11
 ------
 * Add compatibility with Django 3
