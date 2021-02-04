@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.template.loader import render_to_string
 from jet.dashboard import modules
 from jet.dashboard.models import UserDashboardModule
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from jet.ordered_set import OrderedSet
 from jet.utils import get_admin_site_name, context_to_dict
 
@@ -59,7 +59,7 @@ class Dashboard(object):
 
         .. code-block:: python
 
-            from django.utils.translation import ugettext_lazy as _
+            from django.utils.translation import gettext_lazy as _
             from jet.dashboard import modules
             from jet.dashboard.dashboard import Dashboard, AppIndexDashboard
 

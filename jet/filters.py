@@ -46,7 +46,7 @@ try:
     from django import forms
     from django.contrib.admin.widgets import AdminDateWidget
     from rangefilter.filter import DateRangeFilter as OriginalDateRangeFilter
-    from django.utils.translation import ugettext as _
+    from django.utils.translation import gettext as _
 
 
     class DateRangeFilter(OriginalDateRangeFilter):
