@@ -81,7 +81,7 @@ gulp.task('vendor-styles', function() {
                     console.error(error);
                 }),
             gulp.src([
-                './node_modules/perfect-scrollbar/src/css/main.scss'
+                './node_modules/perfect-scrollbar/src/perfect-scrollbar.scss'
             ])
                 .pipe(sass({
                     outputStyle: 'compressed'
@@ -121,7 +121,7 @@ gulp.task('vendor-translations', function() {
 
 gulp.task('locales', shell.task('python manage.py compilemessages', { quiet: true }));
 
-gulp.task('build', ['scripts', 'styles', 'vendor-styles', 'vendor-translations', 'locales']);
+gulp.task('build', gulp.parallel('scripts', 'styles', 'vendor-styles', 'vendor-translations', 'locales'));
 
 gulp.task('watch', function() {
     gulp.watch('./jet/static/jet/js/src/**/*.js', ['scripts']);
@@ -129,4 +129,4 @@ gulp.task('watch', function() {
     gulp.watch(['./jet/locale/**/*.po', './jet/dashboard/locale/**/*.po'], ['locales']);
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', gulp.parallel('build', 'watch'));
