@@ -5,13 +5,13 @@ var t = require('../utils/translate');
 
 require('jquery-ui/ui/core');
 require('jquery-ui/ui/widget');
-require('jquery-ui/ui/mouse');
-require('jquery-ui/ui/draggable');
-require('jquery-ui/ui/droppable');
-require('jquery-ui/ui/sortable');
-require('jquery-ui/ui/resizable');
-require('jquery-ui/ui/button');
-require('jquery-ui/ui/dialog');
+require('jquery-ui/ui/widgets/mouse');
+require('jquery-ui/ui/widgets/draggable');
+require('jquery-ui/ui/widgets/droppable');
+require('jquery-ui/ui/widgets/sortable');
+require('jquery-ui/ui/widgets/resizable');
+require('jquery-ui/ui/widgets/button');
+require('jquery-ui/ui/widgets/dialog');
 
 var Dashboard = function($dashboard) {
     this.$dashboard = $dashboard;
