@@ -1,9 +1,9 @@
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand, CommandError
 
 from jet.utils import get_app_list, get_original_menu_items
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
     help = 'Generates example of JET custom apps setting'
     item_order = 0
 
